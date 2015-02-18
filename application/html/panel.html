@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>File Controller - Panel</title>
+	<link rel="stylesheet" href="../css/panel.css">
+</head>
+<body>
+	<button id="settings">Settings</button>
+
+	<section id="auth">
+		<label for="user">Username: 
+			<input type="text" placeholder="user" name="user" id="user">
+		</label>
+		<label for="pass">Password: 
+			<input type="password" placeholder="password" name="pass" id="pass">
+		</label>
+		<button id="login">Log In</button>
+	</section>
+
+	<section id="home">
+		<button id="logout">Log Out</button>
+		<button id="update">Update SVN</button>
+
+		<input type="text" placeholder="Nombre del archivo" id="fileName">
+		<div>
+			<ul id='suggestions'></ul>
+		</div>
+		<div>
+			<h2>Your queue</h2>
+			<ul id='current'></ul>
+		</div>
+	</section>
+
+	<div id="log"></div>
+
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/panel.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>File Controlle - Options</title>
+    <link rel="stylesheet" href="../options.css">
+</head>
+<body>
+	<div id='main'>
+		<h2>Options: [<strong id="userName"></strong>]</h2>
+		<ul>
+			<li>Show PopUps <input type='checkbox' id='popup' checked></li>
+			<li>PopUp disappear after <input type='text' id='disapear' value='4'> second(s)</li>
+            <li id="changePass">
+                <p>Change Password</p>
+                <input type="password" id="oldPass" placeholder="Old Password">
+                <input type="password" id="newPass" placeholder="New Password">
+            </li>
+			<li id='save'>Save</li>
+		</ul>
+		<p id='status'></p>
+	</div>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/options.js"></script>
+</body>
+</html>

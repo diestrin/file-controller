@@ -1,0 +1,25 @@
+{
+   "manifest_version": 2,
+   "background": {"page":"html/background.html"},
+   "browser_action": {
+      "default_icon": "img/icon.png"
+   },
+   "description": "File controller",
+   "icons": {
+      "128": "img/icon.png"
+   },
+   "name": "File Controller",
+   "options_page": "html/options.html",
+   "permissions": [
+      "tabs", 
+      "webRequest", 
+      "*://*.googleapis.com/", 
+      "*://*.nodejs.boszdigital.com/", 
+      "notifications", 
+      "background" 
+   ],
+   "web_accessible_resources": [
+      "img/icon.png"
+    ],
+   "version": "0.0.0.7"
+}
