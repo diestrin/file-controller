@@ -1,0 +1,73 @@
+/* line 1, ../../app/styles/global.scss */
+::selection {
+  color: inherit;
+  background-color: inherit;
+  background-image: inherit;
+}
+
+/* line 7, ../../app/styles/global.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 13, ../../app/styles/global.scss */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* line 18, ../../app/styles/global.scss */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 22, ../../app/styles/global.scss */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 26, ../../app/styles/global.scss */
+html {
+  height: 100%;
+}
+/* line 29, ../../app/styles/global.scss */
+html body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-family: "Open Sans";
+}
+/* line 35, ../../app/styles/global.scss */
+html body .container {
+  height: 100%;
+}
+/* line 38, ../../app/styles/global.scss */
+html body .container > section {
+  min-height: 100%;
+  position: relative;
+}
+/* line 42, ../../app/styles/global.scss */
+html body .container > section:not(#login) {
+  padding-top: 60px;
+}
+/* line 48, ../../app/styles/global.scss */
+html body .dual-word {
+  font-weight: normal;
+}
+/* line 51, ../../app/styles/global.scss */
+html body .dual-word > span {
+  font-weight: 700;
+}
+/* line 56, ../../app/styles/global.scss */
+html body .logo:after {
+  content: "";
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: auto 60%;
+  background-position: 50%;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+}

@@ -1,0 +1,49 @@
+#topbar{
+	height: 60px;
+	@include red-gradient(bottom, top);
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	-webkit-align-items: center;
+	position: fixed;
+	left:0;
+	right:0;
+	z-index: 100;
+
+	h1{
+		color: white;
+		padding-left: 45px;
+		font-size: 2em;
+		margin-left: 10px;
+		background-image: url(../img/logo.png);
+		background-size: auto 70%;
+		background-repeat: no-repeat;
+		background-position: 0 50%;
+		line-height: 60px;
+		letter-spacing: -2px;
+	}
+
+	ul{
+		list-style: none;
+		margin-right: 20px;
+		width: 40%;
+		max-width: 300px;
+		text-align: right;
+
+		li{
+			display: inline-block;
+			width: 20%;
+
+			a{
+				color: transparent;
+				text-decoration: none;
+				font-size: 1.8em;
+				text-shadow: 3px 3px 3px rgba(0,0,0,0.8);
+				-webkit-transition: 0.3s color;
+
+				&:hover{
+					color: white;
+				}
+			}
+		}
+	}
+}

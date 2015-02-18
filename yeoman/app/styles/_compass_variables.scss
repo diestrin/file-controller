@@ -1,0 +1,32 @@
+@mixin red-gradient($start, $end, $color: red, $invert: false) {
+	$color-start: rgb(240,0,0);
+	$color-end: rgb(150,0,0);
+
+	@if $color == gray{
+		$color-start: rgb(175,175,175);
+		$color-end: rgb(70,70,70);
+	}@else if $color == white{
+		$color-start: rgb(255,255,255);
+		$color-end: rgb(210,210,210);
+	}@else if $color == lightgray{
+		$color-start: rgb(125,125,125);
+		$color-end: rgb(160,160,160);
+	}@else if $color == transparent{
+		$color-start: rgba(0,0,0,0.3);
+		$color-end: rgba(100,100,100,0.3);
+	}
+
+	@if $invert == true{
+		$temp-color: $color-start;
+		$color-start: $color-end;
+		$color-end: $temp-color;
+	}
+
+	background-image: -webkit-gradient(
+		linear,
+		left $start,
+		left $end,
+		color-stop(0, $color-start),
+		color-stop(1, $color-end)
+	);
+}

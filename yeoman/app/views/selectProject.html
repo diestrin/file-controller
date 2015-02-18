@@ -1,0 +1,18 @@
+<section id="select-project">
+	<h2 class="dual-word">selct<span>Project</span></h2>
+	<ul>
+		<li ng-repeat="project in projects">
+			<header ng-click="openClose(project)" class="dual-word">
+				{{project.name.first}}<span>{{project.name.second}}</span>
+			</header>
+			<section class="{{project.class}}">
+				<header class="dual-word">select<span>Brand</span></header>
+				<ul>
+					<li ng-repeat="brand in project.brands">
+						<a href="#/home/{{project.key}}/{{brand.name}}" class="{{brand.name}}"></a>
+					</li>
+				</ul>
+			</section>
+		</li>
+	</ul>
+</section>

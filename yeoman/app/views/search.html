@@ -1,0 +1,18 @@
+<section id="search">
+	<form>
+		<input type="text" name="filename">
+		<button>R</button>
+	</form>
+	<ul>
+		<li ng-repeat="file in results">
+			<section class="name">
+				<a href="#/file/{{encodeURI(file.path)}}"><h3>{{file.name}}</h3></a>
+				<button></button>
+			</section>
+			<section class="info">
+				<p>{{file.path}}</p>
+				<button>Apply</button>
+			</section>
+		</li>
+	</ul>
+</section>

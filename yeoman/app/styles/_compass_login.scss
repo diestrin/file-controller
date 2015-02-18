@@ -1,0 +1,105 @@
+$border-radius-amount: 15px;
+
+#login{
+	height: 100%;
+
+	header{
+		height: 60%;
+		background-color: rgb(200,0,0);
+		@include red-gradient(bottom, top);
+	}
+
+	form{
+		height: 30%;
+		text-align: center;
+
+		h1{
+			color: rgb(128,0,0);
+			font-size: 2.5em;
+			padding: 15px 0 7px;
+		}
+
+		fieldset{
+			border: none;
+
+
+			input,
+			button{
+				height: 30px;
+				outline: none;
+			}
+
+			input{
+
+				&[name="user"],
+				&[name="password"]{
+					font-size: 20px;
+					width: 30%;
+					max-width: 200px;
+					padding: 0 8px;
+					background-color: rgba(0,0,0,0.1);
+					box-shadow: 5px 5px 15px rgba(0,0,0,0.2) inset,
+						-5px -5px 15px rgba(0,0,0,0.2) inset;
+				}
+
+				&[name="user"]{
+					border-radius: $border-radius-amount 0 0 $border-radius-amount;
+					text-align: right;
+				}
+
+				&[name="password"]{
+					border-radius: 0 $border-radius-amount $border-radius-amount 0;
+				}
+			}
+
+			div{
+				display: inline-block;
+				width: 30%;
+				max-width: 200px;
+				padding-top: 7px;
+
+				&:first-child{
+					text-align: right;
+				}
+
+				&:last-child{
+					text-align: left;
+				}
+
+				input,
+				button{
+					border: none;
+					font-size: 20px;
+					color: white;
+				}
+
+				input{
+					background-color: rgb(200,0,0);
+					width: 60%;
+					font-family: "Open Sans";
+					font-weight: bold;
+					text-align: left;
+					padding-left: 5px;
+					border-radius: 0 $border-radius-amount $border-radius-amount 0;
+					@include red-gradient(top, bottom);
+					box-shadow: 0 4px 8px rgba(0,0,0,0.35) inset;
+
+					&:hover{
+						@include red-gradient(top, bottom, red, true);
+					}
+				}
+
+				button{
+					background-color: rgb(85,85,85);
+					width: 30%;
+					border-radius: $border-radius-amount 0 0 $border-radius-amount;
+					@include red-gradient(top, bottom, gray);
+
+					&:hover{
+						@include red-gradient(top, bottom, gray, true);
+					}
+				}
+			}
+		}
+	}
+}

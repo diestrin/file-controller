@@ -1,0 +1,23 @@
+<section id="file">
+	<a href="#/selectProject"><h2 class="dual-word {{project.brand.name}}">{{project.name.first}}<span>{{project.name.second}}</span></h2></a>
+	<header>
+		<h3>{{file.name}}</h3>
+		<p>0d 00:00</p>
+		<button></button>
+	</header>
+	<article class="info">
+		<p>{{file.path}}</p>
+		<button></button>
+	</article>
+	<h4 class="dual-word">on<span>Queue</span></h4>
+	<ul>
+		<li ng-repeat="user in file.waiting">
+			<p>{{user.name}}</p>
+			<strong>{{user.rol}}</strong>
+		</li>
+		<li>
+			<p>You</p>
+			<button>Join</button>
+		</li>
+	</ul>
+</section>

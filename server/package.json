@@ -1,0 +1,14 @@
+{
+	"name"			:"FileController",
+	"description"	:"A plugin for Google Chrome",
+	"author"		:"Diego Barahona @diestrin",
+	"version"		:"0.0.7",
+	"contributors"	:[
+		"David Guillen"
+	],
+	"dependencies"	:{
+		"socket.io"			: ">= 0.9.6",
+		"mongodb-wrapper"	: ">= 0.3.0"
+	},
+	"engine"		:"node >= 0.8.0"
+}

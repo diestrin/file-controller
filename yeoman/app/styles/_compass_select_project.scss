@@ -1,0 +1,92 @@
+#select-project{
+
+	>h2{
+		height: 60px;
+		font-size: 1.8em;
+		line-height: 60px;
+		border-bottom: 2px solid darkgray;
+		text-align: center;
+	}
+
+	ul{
+		list-style: none;
+
+		li{
+			text-align: left;
+
+			>header{
+				padding-left: 60px;
+				cursor: pointer;
+				height: 45px;
+				line-height: 45px;
+				font-size: 1.5em;
+				@include red-gradient(top, bottom, white);
+			}
+
+			section{
+				height: 0px;
+				overflow: hidden;
+				-webkit-transition: 0.7s height;
+
+				&.open{
+					height: 100px;
+				}
+
+				header{
+					height: 25px;
+					text-align: center;
+					@include red-gradient(top, bottom, lightgray);
+				}
+
+				ul{
+					overflow-x: auto;
+					overflow-y: hidden;
+					list-style: none;
+					white-space: nowrap;
+					height: 75px;
+					background-color: rgb(190,190,190);
+
+					li{
+						display: inline-block;
+
+						a{
+							text-decoration: none;
+							display: block;
+							width: 80px;
+							height: 60px;
+							background-image: url(../img/brands-icons.png);
+							background-repeat: no-repeat;
+							background-position: 0 50%;
+							background-size: auto 60px;
+							padding: 0 5px;
+
+							&:hover{
+								background-image: url(../img/brands-icons-hover.png);
+							}
+
+							&.buick{
+								background-position-x: 5px;
+							}
+
+							&.cadillac{
+								background-position-x: -75px;
+							}
+
+							&.chevrolet{
+								background-position-x: -155px;
+							}
+
+							&.gmc{
+								background-position-x: -235px;
+							}
+
+							&.gm{
+								background-position-x: -315px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

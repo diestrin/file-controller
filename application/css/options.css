@@ -1,0 +1,53 @@
+body {
+    background:#eee;
+    font-family:arial;
+}
+#main{
+    width:320px;
+    margin: 40px auto;
+}
+h2{
+    font-size:26px;
+    text-align: center;
+}
+ul,li{
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style:none;
+}
+li{
+    margin: 10px 0px;
+    padding: 10px;
+    background: #ccc;
+    border-radius:10px;
+}
+li:hover{
+    background: #aaa;
+}
+#disapear{
+    width:50px;
+}
+#save,#status{
+    text-align:center;
+    font-weight:bold;
+    cursor: pointer;
+}
+#status{
+
+}
+a{
+    font-weight:bold;
+    color: #eee;
+    background:#555;
+    text-decoration:none;
+    padding: 2px 10px;
+}
+a:hover{
+    background:#222;
+}
+#changePass{
+    display: none;
+}
+#changePass input{
+    width:100%;
+}

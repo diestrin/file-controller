@@ -1,0 +1,74 @@
+/* line 2, ../../app/styles/file.scss */
+#file a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 6, ../../app/styles/file.scss */
+#file a > h2 {
+  height: 60px;
+  font-size: 1.8em;
+  line-height: 60px;
+  text-align: center;
+  vertical-align: top;
+}
+/* line 13, ../../app/styles/file.scss */
+#file a > h2 span {
+  vertical-align: top;
+}
+/* line 17, ../../app/styles/file.scss */
+#file a > h2:before {
+  content: "";
+  background-image: url(../img/brands-icons.png);
+  background-size: auto 60px;
+  background-repeat: no-repeat;
+  background-position-y: 3px;
+  width: 80px;
+  height: 60px;
+  margin-right: 10px;
+  display: inline-block;
+}
+/* line 29, ../../app/styles/file.scss */
+#file a > h2.buick:before {
+  background-position-x: 20px;
+}
+/* line 33, ../../app/styles/file.scss */
+#file a > h2.cadillac:before {
+  background-position-x: -60px;
+}
+/* line 37, ../../app/styles/file.scss */
+#file a > h2.chevrolet:before {
+  background-position-x: -150px;
+}
+/* line 41, ../../app/styles/file.scss */
+#file a > h2.gmc:before {
+  background-position-x: -230px;
+}
+/* line 45, ../../app/styles/file.scss */
+#file a > h2.gm:before {
+  background-position-x: -310px;
+}
+/* line 51, ../../app/styles/file.scss */
+#file header {
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+  -webkit-align-items: center;
+  border: 1px solid #000;
+  border-width: 1px 0;
+  padding: 0 10px;
+  height: 40px;
+}
+/* line 60, ../../app/styles/file.scss */
+#file header h3 {
+  font-size: 1.4em;
+  font-weight: normal;
+}
+/* line 65, ../../app/styles/file.scss */
+#file header button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #F00;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5) inset;
+  cursor: pointer;
+}
